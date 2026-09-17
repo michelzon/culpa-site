@@ -13,11 +13,11 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </style></head>
 <body><header><div class="wrap"><span class="brand">Culpa</span><a href="privacy.html">English</a></div></header>
 <main><h1>Privacyverklaring - Culpa</h1>
-<p><strong>Laatst bijgewerkt: 4 september 2026</strong></p>
+<p><strong>Laatst bijgewerkt: 17 september 2026</strong></p>
 <p>Deze privacyverklaring legt uit welke gegevens de app Culpa ("Culpa", "de app", "wij", "we") verzamelt, waarom, en welke keuzes je hebt. Ze geldt voor de Android-app onder pakketnaam <code>com.michelzondag.culpa</code> en, zodra die uitkomt, de iOS-versie.</p>
 <p>Culpa wordt ontwikkeld door een individuele ontwikkelaar, <strong>Michel Zondag</strong> ("de ontwikkelaar"). Vragen over deze verklaring of je gegevens kun je sturen naar <strong>info@michelzondag.com</strong>.</p>
 <h2>1. Geen account nodig</h2>
-<p>Voor Culpa hoef je geen account aan te maken, en we vragen nooit om je naam, e-mailadres of andere direct identificerende gegevens om te spelen. Je voortgang, aankopen en instellingen worden op je apparaat opgeslagen. Als je ervoor kiest om in te loggen bij <strong>Google Play Games Services</strong> (optioneel, voor cloud save en ranglijsten), geeft Google ons alleen een speler-ID - nooit je naam of e-mailadres.</p>
+<p>Voor Culpa hoef je geen account aan te maken, en we vragen nooit om je naam, e-mailadres of andere direct identificerende gegevens om te spelen. Je voortgang, aankopen en instellingen worden op je apparaat opgeslagen. In deze versie is er geen inlog bij Google Play Games Services en geen cloud save: niets neemt je voortgang mee van je apparaat af.</p>
 <h2>2. Wat we verzamelen, en waarom</h2>
 <table>
 <thead>
@@ -57,10 +57,10 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Google Firebase Analytics</strong> - app-gebruiks- en eventgegevens, om betrokkenheid en retentie te begrijpen. <a href="https://policies.google.com/privacy">Privacyverklaring van Google</a></li>
 <li><strong>Google Firebase Crashlytics</strong> - crash- en diagnostische gegevens, om de app stabiel te houden.</li>
 <li><strong>Google AdMob</strong>, inclusief mediation-partners - toont advertenties (rewarded video, interstitial en optioneel banner) en gebruikt apparaat-/advertentie-identificatoren om advertenties te selecteren en te meten. Mediation-partners kunnen andere door Google gecertificeerde advertentienetwerken zijn; elk werkt onder zijn eigen privacyverklaring, vermeld in het UMP-toestemmingsscherm in de app.</li>
-<li><strong>Meta (Facebook) SDK</strong> (<code>facebook_app_events</code>) - gebruikt voor advertentie-attributie en campagnemeting wanneer je Culpa installeert via een Meta-advertentie (Facebook/Instagram), en om installatie- en aankoopgebeurtenissen terug te rapporteren aan Meta Ads. <a href="https://www.facebook.com/privacy/policy/">Privacyverklaring van Meta</a></li>
 <li><strong>Google Play Billing</strong> - verwerkt je in-app-aankopen. Culpa ziet nooit je betaalkaartgegevens; Google Play handelt betalingen rechtstreeks af.</li>
-<li><strong>Google Play Games Services</strong> (optioneel) - biedt cloud save, prestaties en ranglijsten als je ervoor kiest in te loggen.</li>
+<li><strong>Google Cloud Firestore en Firebase Authentication</strong> - bewaren de inzendingen voor de wereldranglijst uit §2 en geven het anonieme speler-ID uit waaronder die staan. Er komt geen inlog, naam of e-mailadres aan te pas.</li>
 </ul>
+<p>Niet in deze versie: Culpa bevat geen Meta (Facebook) SDK en geen Google Play Games Services. Als een van beide ooit wordt toegevoegd, worden deze paragraaf en het Play-formulier voor gegevensbeveiliging bijgewerkt voordat die build uitgaat.</p>
 <p>We verkopen je gegevens niet. Gegevens worden alleen met deze partijen gedeeld om de app te laten werken, advertenties te tonen, betalingen te verwerken en advertentieprestaties te meten.</p>
 <h2>4. Rechtsgrond voor verwerking</h2>
 <ul>
@@ -76,7 +76,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Ranglijstgegevens van de dagelijkse zaak</strong> (alleen oplostijd en land, geen naam tenzij je daarvoor kiest): bewaard voor een beperkte periode zodat de ranglijst kan functioneren, daarna geaggregeerd of verwijderd.</li>
 </ul>
 <h2>6. Kinderen</h2>
-<p>Culpa is <strong>niet gericht op kinderen jonger dan 13 jaar</strong> (of de equivalente minimumleeftijd in jouw land). We verzamelen niet bewust persoonsgegevens van kinderen. Als de UMP-toestemmingsflow aangeeft dat een gebruiker onder de toestemmingsleeftijd valt (<code>tagForUnderAgeOfConsent</code>), schakelt Culpa gepersonaliseerde advertenties en gerelateerde tracking voor die sessie uit. Als je vermoedt dat een kind ons persoonsgegevens heeft verstrekt, neem dan contact op via <strong>info@michelzondag.com</strong> en we verwijderen deze.</p>
+<p>Culpa is <strong>niet gericht op kinderen jonger dan 13 jaar</strong> (of de equivalente minimumleeftijd in jouw land). We verzamelen niet bewust persoonsgegevens van kinderen. Culpa heeft een PEGI 7-classificatie. Omdat de app bedoeld is voor gebruikers van 13 jaar en ouder, markeren we toestemmingsverzoeken niet als afkomstig van een gebruiker onder de toestemmingsleeftijd (<code>tagForUnderAgeOfConsent</code> staat op false), zodat iedereen dezelfde toestemmingsvraag krijgt en iedereen zijn keuze via Instellingen opnieuw kan openen. Als je vermoedt dat een kind ons persoonsgegevens heeft verstrekt, neem dan contact op via <strong>info@michelzondag.com</strong> en we verwijderen deze.</p>
 <h2>7. Jouw rechten</h2>
 <p>Afhankelijk van waar je woont, heb je mogelijk het recht om:</p>
 <ul>
@@ -99,9 +99,9 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </ol>
 <p>We bevestigen verwijdering binnen 30 dagen, behalve waar we wettelijk verplicht zijn aankoop-/boekhoudgegevens langer te bewaren.</p>
 <h2>10. Beveiliging</h2>
-<p>Gegevens die worden verzonden naar onze verwerkers (Firebase, AdMob, Meta, Google Play Billing) zijn versleuteld met industriestandaard TLS. We slaan zelf geen betaalkaartgegevens op; Google Play Billing handelt dat rechtstreeks af.</p>
+<p>Gegevens die worden verzonden naar onze verwerkers (Firebase, AdMob, Google Play Billing) zijn versleuteld met industriestandaard TLS. We slaan zelf geen betaalkaartgegevens op; Google Play Billing handelt dat rechtstreeks af.</p>
 <h2>11. Internationale gegevensoverdrachten</h2>
-<p>Onze verwerkers (Google, Meta) kunnen gegevens verwerken en opslaan buiten je land, inclusief in de Verenigde Staten, onder hun respectievelijke standaardcontractbepalingen of gelijkwaardige waarborgen. Zie de privacyverklaring van elke partij, gelinkt in §3, voor details.</p>
+<p>Onze verwerkers (allemaal Google) kunnen gegevens verwerken en opslaan buiten je land, inclusief in de Verenigde Staten, onder hun respectievelijke standaardcontractbepalingen of gelijkwaardige waarborgen. Zie de privacyverklaring van elke partij, gelinkt in §3, voor details.</p>
 <h2>12. Wijzigingen in deze verklaring</h2>
 <p>We kunnen deze verklaring bijwerken naarmate de app verandert of wettelijke vereisten evolueren. De datum "Laatst bijgewerkt" bovenaan geeft de meest recente wijziging weer. Belangrijke wijzigingen worden waar vereist ook doorgevoerd in de UMP-toestemmingsflow in de app.</p>
 <h2>13. Contact</h2>

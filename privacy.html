@@ -13,11 +13,11 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </style></head>
 <body><header><div class="wrap"><span class="brand">Culpa</span><a href="privacy-nl.html">Nederlands</a></div></header>
 <main><h1>Privacy Policy - Culpa</h1>
-<p><strong>Last updated: 4 September 2026</strong></p>
+<p><strong>Last updated: 17 September 2026</strong></p>
 <p>This privacy policy explains what data the Culpa app ("Culpa", "the app", "we", "us") collects, why, and what choices you have. It applies to the Android app published under the package <code>com.michelzondag.culpa</code> and, once released, the iOS version.</p>
 <p>Culpa is developed by an individual developer, <strong>Michel Zondag</strong> ("the developer"). If you have questions about this policy or your data, contact <strong>info@michelzondag.com</strong>.</p>
 <h2>1. No account required</h2>
-<p>Culpa does not require you to create an account, and we never ask for your name, email address, or any other directly identifying information to play the game. Your progress, purchases, and settings are stored on your device. If you choose to sign in to <strong>Google Play Games Services</strong> (optional, for cloud save and leaderboards), Google provides us only a player ID - never your name or email.</p>
+<p>Culpa does not require you to create an account, and we never ask for your name, email address, or any other directly identifying information to play the game. Your progress, purchases, and settings are stored on your device. There is no Google Play Games Services sign-in and no cloud save in this release: nothing carries your progress off the device.</p>
 <h2>2. What we collect, and why</h2>
 <table>
 <thead>
@@ -57,10 +57,10 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Google Firebase Analytics</strong> - app usage and event data, to understand engagement and retention. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
 <li><strong>Google Firebase Crashlytics</strong> - crash and diagnostic data, to keep the app stable.</li>
 <li><strong>Google AdMob</strong>, including its mediation partners - shows ads (rewarded video, interstitial, and optionally banner) and uses device/advertising identifiers to select and measure ads. Mediation partners may include other ad networks certified by Google; each operates under its own privacy policy, listed in the in-app UMP consent message.</li>
-<li><strong>Meta (Facebook) SDK</strong> (<code>facebook_app_events</code>) - used for advertising attribution and campaign measurement when you install Culpa via a Meta (Facebook/Instagram) ad, and to report install and purchase events back to Meta Ads. <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></li>
 <li><strong>Google Play Billing</strong> - processes your in-app purchases. Culpa never sees your payment card details; Google Play handles payment directly.</li>
-<li><strong>Google Play Games Services</strong> (optional) - provides cloud save, achievements, and leaderboards if you choose to sign in.</li>
+<li><strong>Google Cloud Firestore and Firebase Authentication</strong> - stores the world leaderboard entries described in §2 and hands out the anonymous player id they are filed under. No sign-in, name or email address is involved.</li>
 </ul>
+<p>Not in this release: Culpa ships no Meta (Facebook) SDK and no Google Play Games Services. If either is ever added, this section and the Play Data safety form are updated before that build goes out.</p>
 <p>We do not sell your data. Data is shared with these providers only to operate the app, show ads, process payments, and measure advertising performance.</p>
 <h2>4. Legal basis for processing</h2>
 <ul>
@@ -76,7 +76,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Daily-case leaderboard entries</strong> (solve time and country only, no name unless you opt in): retained for a limited period for the leaderboard to function, then aggregated or deleted.</li>
 </ul>
 <h2>6. Children</h2>
-<p>Culpa is <strong>not directed at children under 13</strong> (or the equivalent minimum age in your country). We do not knowingly collect personal data from children. If the UMP consent flow indicates a user is under the age of consent (<code>tagForUnderAgeOfConsent</code>), Culpa disables personalized ads and related tracking for that session. If you believe a child has provided us with personal data, contact us at <strong>info@michelzondag.com</strong> and we will delete it.</p>
+<p>Culpa is <strong>not directed at children under 13</strong> (or the equivalent minimum age in your country). We do not knowingly collect personal data from children. Culpa is rated PEGI 7. Because the app is for users of 13 and up, we do not tag consent requests as coming from a user under the age of consent (<code>tagForUnderAgeOfConsent</code> is set to false), so everyone is asked the same consent question and everyone can reopen their choice from Settings. If you believe a child has provided us with personal data, contact us at <strong>info@michelzondag.com</strong> and we will delete it.</p>
 <h2>7. Your rights</h2>
 <p>Depending on where you live, you may have the right to:</p>
 <ul>
@@ -99,9 +99,9 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </ol>
 <p>We will confirm deletion within 30 days, except where we are legally required to retain purchase/accounting records for longer.</p>
 <h2>10. Security</h2>
-<p>Data in transit to our third-party processors (Firebase, AdMob, Meta, Google Play Billing) is encrypted using industry-standard TLS. We do not store payment card data ourselves; Google Play Billing handles that directly.</p>
+<p>Data in transit to our third-party processors (Firebase, AdMob, Google Play Billing) is encrypted using industry-standard TLS. We do not store payment card data ourselves; Google Play Billing handles that directly.</p>
 <h2>11. International data transfers</h2>
-<p>Our processors (Google, Meta) may process and store data outside your country, including in the United States, under their respective standard contractual clauses or equivalent safeguards. See each provider's privacy policy linked in §3 for details.</p>
+<p>Our processors (all of them Google) may process and store data outside your country, including in the United States, under their respective standard contractual clauses or equivalent safeguards. See each provider's privacy policy linked in §3 for details.</p>
 <h2>12. Changes to this policy</h2>
 <p>We may update this policy as the app changes or as legal requirements evolve. The "Last updated" date at the top will reflect the most recent revision. Material changes will be reflected in the in-app UMP consent flow where required.</p>
 <h2>13. Contact</h2>
