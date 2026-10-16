@@ -33,13 +33,13 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <tbody>
 <tr>
 <td><strong>Apparaat- en advertentie-ID's</strong></td>
-<td>Android: de advertentie-ID van je toestel.<br>iOS: de advertentie-ID (IDFA), alleen als je toestaat dat de app je volgt wanneer iOS dat vraagt (zie §4 en §8).<br>Beide: toestelmodel, versie van het besturingssysteem, globale locatie afgeleid uit je IP-adres, een app-instance-ID</td>
-<td>Om advertenties te tonen en te meten, fraude te herkennen, en te begrijpen welke installatie uit welke advertentiecampagne komt</td>
+<td>Android: de advertentie-ID van je toestel.<br>iOS: niet de advertentie-ID (IDFA). Culpa vraagt niet of de app je mag volgen (zie §4). De advertentiesoftware gebruikt een ID dat alleen geldt voor deze app of ontwikkelaar.<br>Beide: toestelmodel, versie van het besturingssysteem, globale locatie afgeleid uit je IP-adres, een app-instance-ID</td>
+<td>Om advertenties te tonen en te meten, fraude te herkennen, en op Android te begrijpen welke installatie uit welke advertentiecampagne komt</td>
 </tr>
 <tr>
 <td><strong>Aankoopgeschiedenis</strong></td>
 <td>Welke in-app-producten je kocht (bijvoorbeeld <code>remove_ads</code>, dossierpakketten, hints), transactie-ID, prijs en valuta</td>
-<td>Om de content die je kocht te ontgrendelen en omzet per advertentiebron te meten</td>
+<td>Om de content die je kocht te ontgrendelen en op Android omzet per advertentiebron te meten</td>
 </tr>
 <tr>
 <td><strong>Gegevens over app-gebruik</strong></td>
@@ -75,7 +75,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Google Firebase Analytics</strong> (Android en iOS): gebruiks- en eventgegevens, om te begrijpen hoe spelers het spel gebruiken. <a href="https://policies.google.com/privacy">Privacyverklaring van Google</a></li>
 <li><strong>Google Firebase Crashlytics</strong> (Android en iOS): crash- en diagnosegegevens, om de app stabiel te houden.</li>
 <li><strong>Google Firebase Remote Config</strong> (Android en iOS): hiermee zetten we een functie, zoals een bannertest, aan of uit zonder app-update. Het gebruikt een installatie-ID dat Firebase aanmaakt.</li>
-<li><strong>Google AdMob</strong>, inclusief mediation-partners (Android en iOS): toont advertenties (video met beloning, tussenadvertenties en soms een banner) en gebruikt apparaat- en advertentie-ID's om advertenties te kiezen en te meten. Mediation-partners kunnen andere door Google gecertificeerde advertentienetwerken zijn. Elk werkt onder zijn eigen privacybeleid, dat in het toestemmingsscherm in de app staat.</li>
+<li><strong>Google AdMob</strong>, inclusief mediation-partners (Android en iOS): toont advertenties (video met beloning, tussenadvertenties en soms een banner) en gebruikt apparaat- en advertentie-ID's om advertenties te kiezen en te meten. Op iOS vraagt Culpa alleen niet-gepersonaliseerde advertenties op: die worden gekozen op context, zoals de app en je globale locatie, niet op je gedrag in andere apps. Een ID dat alleen geldt voor deze app of ontwikkelaar wordt nog gebruikt om te beperken hoe vaak je dezelfde advertentie ziet en voor geaggregeerde advertentierapporten. Mediation-partners kunnen andere door Google gecertificeerde advertentienetwerken zijn. Elk werkt onder zijn eigen privacybeleid, dat in het toestemmingsscherm in de app staat.</li>
 <li><strong>Google Cloud Firestore en Firebase Authentication</strong> (Android en iOS): bewaren de inzendingen voor de wereldranglijst uit §2 en geven het anonieme speler-ID uit waaronder die staan. Er komt geen inlog, naam of e-mailadres aan te pas.</li>
 <li><strong>Firebase App Check</strong> (Android en iOS): controleert of verzoeken aan de ranglijst van een echte Culpa-app komen, zodat niemand van buiten de app scores kan vervalsen. Op Android gebruikt dit Google Play Integrity. Op iOS gebruikt het Apple App Attest, of Apple DeviceCheck op toestellen zonder App Attest.</li>
 <li><strong>Google Play Billing</strong> (alleen Android): verwerkt je in-app-aankopen. Culpa ziet nooit je betaalgegevens. Google Play handelt de betaling rechtstreeks af.</li>
@@ -87,9 +87,9 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 
 <h2>4. Grondslag voor de verwerking</h2>
 <ul>
-<li><strong>In de Europese Economische Ruimte, het Verenigd Koninkrijk, Zwitserland en andere regio's met vergelijkbare toestemmingsregels</strong>: gepersonaliseerde advertenties en de bijbehorende analyse en attributie gebeuren pas nadat je toestemming geeft in het toestemmingsscherm in de app (Google User Messaging Platform), dat je ziet als je voor het eerst speelt. Weiger je, of geef je maar deels toestemming, dan toont Culpa niet-gepersonaliseerde advertenties en beperkt de app de gegevensverzameling volgens de keuzes die dat scherm aan de app doorgeeft. Dat geldt ook voor Meta op Android: de app stuurt niets naar Meta tenzij je Meta in dat scherm toestaat.</li>
+<li><strong>In de Europese Economische Ruimte, het Verenigd Koninkrijk, Zwitserland en andere regio's met vergelijkbare toestemmingsregels</strong>: gepersonaliseerde advertenties en de bijbehorende analyse en attributie gebeuren pas nadat je toestemming geeft in het toestemmingsscherm in de app (Google User Messaging Platform), dat je ziet als je voor het eerst speelt. Weiger je, of geef je maar deels toestemming, dan toont Culpa niet-gepersonaliseerde advertenties en beperkt de app de gegevensverzameling volgens de keuzes die dat scherm aan de app doorgeeft. Dat geldt ook voor Meta op Android: de app stuurt niets naar Meta tenzij je Meta in dat scherm toestaat. Op iOS blijven advertenties niet-gepersonaliseerd, wat je ook kiest.</li>
 <li><strong>Buiten die regio's, waar de lokale wet dat toestaat</strong>: we baseren ons op <strong>gerechtvaardigd belang</strong> om apparaat-ID's en gebruiksgegevens te verwerken voor analyse, fraudepreventie en advertenties, afgewogen tegen je rechten. Waar de lokale wet toestemming eist, vragen we die via hetzelfde scherm, aangepast aan je regio.</li>
-<li><strong>Toestemming voor volgen op iOS</strong>: op iOS vraagt Apple ook of Culpa je mag volgen in apps en op websites van andere bedrijven (App Tracking Transparency). Culpa stelt die vraag na het toestemmingsscherm, waar dat scherm geldt. Kies je "Vraag app om niet te volgen", dan krijg je advertenties zonder advertentie-ID. Het spel werkt in beide gevallen hetzelfde.</li>
+<li><strong>Geen volgen op iOS</strong>: Culpa op iOS volgt je niet in apps en op websites van andere bedrijven, en vraagt daar dus ook geen toestemming voor (App Tracking Transparency). Advertenties op iOS zijn altijd niet-gepersonaliseerd, en de app laat Google Analytics op iOS weten dat het geen advertentie-ID's mag opslaan en je gegevens niet mag gebruiken voor advertenties of het personaliseren daarvan.</li>
 <li><strong>Aankoopgegevens</strong> verwerken we omdat dat nodig is om te leveren wat je kocht en om aan belasting- en boekhoudplichten te voldoen.</li>
 <li><strong>Ranglijstgegevens</strong> verwerken we omdat dat nodig is om de wereldranglijst te laten werken waaraan je meedoet.</li>
 </ul>
@@ -125,7 +125,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <ul>
 <li><strong>In de app</strong>: waar het toestemmingsscherm geldt (zoals in de EER, het VK en Zwitserland), wijzig je je keuze op elk moment via <strong>Profiel › Over › Advertentie-instellingen</strong>, dat het scherm opnieuw opent. Elders staat die rij er niet, omdat er geen toestemming te wijzigen is. Trek je daar je toestemming voor Meta in (Android), dan stuurt de app daarna niets meer naar Meta.</li>
 <li><strong>Android</strong>: je kunt je advertentie-ID verwijderen of je afmelden voor gepersonaliseerde advertenties in de instellingen van je toestel, meestal via <strong>Instellingen › Privacy › Advertenties</strong> (het precieze pad verschilt per telefoon).</li>
-<li><strong>iOS</strong>: je zet volgen voor Culpa op elk moment uit via <strong>Instellingen › Privacy en beveiliging › Volgen</strong>. Je krijgt dan advertenties zonder advertentie-ID.</li>
+<li><strong>iOS</strong>: Culpa volgt je niet en toont alleen niet-gepersonaliseerde advertenties, dus er is voor Culpa geen instelling voor volgen om te wijzigen.</li>
 </ul>
 
 <h2>9. Je gegevens verwijderen</h2>
