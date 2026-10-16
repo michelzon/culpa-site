@@ -33,13 +33,13 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <tbody>
 <tr>
 <td><strong>Device and advertising identifiers</strong></td>
-<td>Android: the advertising ID of your device.<br>iOS: the advertising identifier (IDFA), only if you allow tracking when iOS asks (see §4 and §8).<br>Both: device model, operating system version, approximate location derived from your IP address, an app instance ID</td>
-<td>To show and measure ads, to detect fraud, and to understand which install came from which ad campaign</td>
+<td>Android: the advertising ID of your device.<br>iOS: not the advertising identifier (IDFA). Culpa does not ask to track you (see §4). The ad software uses an identifier that only applies to this app or developer.<br>Both: device model, operating system version, approximate location derived from your IP address, an app instance ID</td>
+<td>To show and measure ads, to detect fraud, and, on Android, to understand which install came from which ad campaign</td>
 </tr>
 <tr>
 <td><strong>Purchase history</strong></td>
 <td>Which in-app products you bought (for example <code>remove_ads</code>, case packs, hints), transaction ID, price and currency</td>
-<td>To unlock the content you paid for and to measure revenue by advertising source</td>
+<td>To unlock the content you paid for and, on Android, to measure revenue by advertising source</td>
 </tr>
 <tr>
 <td><strong>App interaction data</strong></td>
@@ -75,7 +75,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <li><strong>Google Firebase Analytics</strong> (Android and iOS): app usage and event data, to understand how players use the game. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
 <li><strong>Google Firebase Crashlytics</strong> (Android and iOS): crash and diagnostic data, to keep the app stable.</li>
 <li><strong>Google Firebase Remote Config</strong> (Android and iOS): lets us switch a feature, such as a banner test, on or off without an app update. It uses an installation ID created by Firebase.</li>
-<li><strong>Google AdMob</strong>, including its mediation partners (Android and iOS): shows ads (rewarded video, interstitial and in some cases a banner) and uses device and advertising identifiers to select and measure ads. Mediation partners may include other ad networks certified by Google. Each works under its own privacy policy, listed in the consent dialog in the app.</li>
+<li><strong>Google AdMob</strong>, including its mediation partners (Android and iOS): shows ads (rewarded video, interstitial and in some cases a banner) and uses device and advertising identifiers to select and measure ads. On iOS, Culpa only requests non-personalised ads: they are chosen from context, such as the app and your approximate location, not from your behaviour in other apps. An identifier that only applies to this app or developer is still used to limit how often you see the same ad and for aggregated ad reports. Mediation partners may include other ad networks certified by Google. Each works under its own privacy policy, listed in the consent dialog in the app.</li>
 <li><strong>Google Cloud Firestore and Firebase Authentication</strong> (Android and iOS): store the world leaderboard entries described in §2 and hand out the anonymous player ID they are filed under. No sign-in, name or email address is involved.</li>
 <li><strong>Firebase App Check</strong> (Android and iOS): checks that requests to the leaderboard come from a genuine copy of Culpa, so scores cannot be faked from outside the app. On Android this uses Google Play Integrity. On iOS it uses Apple App Attest, or Apple DeviceCheck on devices that do not support App Attest.</li>
 <li><strong>Google Play Billing</strong> (Android only): processes your in-app purchases. Culpa never sees your payment details. Google Play handles payment directly.</li>
@@ -87,9 +87,9 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 
 <h2>4. Legal basis for processing</h2>
 <ul>
-<li><strong>In the European Economic Area, the UK, Switzerland and other regions with similar consent rules</strong>: personalised advertising and the related analytics and attribution happen only after you agree in the consent dialog in the app (Google User Messaging Platform), shown when you first play. If you decline or only partly agree, Culpa shows non-personalised ads and limits data collection to match the choices that dialog reports back to the app. This includes Meta on Android: the app sends nothing to Meta unless you allow Meta in that dialog.</li>
+<li><strong>In the European Economic Area, the UK, Switzerland and other regions with similar consent rules</strong>: personalised advertising and the related analytics and attribution happen only after you agree in the consent dialog in the app (Google User Messaging Platform), shown when you first play. If you decline or only partly agree, Culpa shows non-personalised ads and limits data collection to match the choices that dialog reports back to the app. This includes Meta on Android: the app sends nothing to Meta unless you allow Meta in that dialog. On iOS, ads stay non-personalised whatever you choose.</li>
 <li><strong>Outside those regions, where local law allows it</strong>: we rely on <strong>legitimate interest</strong> to process device identifiers and interaction data for analytics, fraud prevention and advertising, balanced against your rights. Where local law requires consent, we ask for it through the same dialog, adjusted to your region.</li>
-<li><strong>iOS tracking permission</strong>: on iOS, Apple also asks whether Culpa may track you across apps and websites owned by other companies (App Tracking Transparency). Culpa asks this after the consent dialog, where that dialog applies. If you choose "Ask App Not to Track", ads are shown without the advertising identifier. The game works the same either way.</li>
+<li><strong>No tracking on iOS</strong>: Culpa on iOS does not track you across apps and websites owned by other companies, and therefore does not ask for permission to do so (App Tracking Transparency). Ads on iOS are always non-personalised, and the app tells Google Analytics on iOS not to store advertising identifiers and not to use your data for advertising or ad personalisation.</li>
 <li><strong>Purchase data</strong> is processed because it is needed to deliver what you bought and to meet tax and accounting obligations.</li>
 <li><strong>Leaderboard data</strong> is processed because it is needed to run the world leaderboard you take part in.</li>
 </ul>
@@ -125,7 +125,7 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <ul>
 <li><strong>In the app</strong>: where the consent dialog applies (such as the EEA, the UK and Switzerland), you can change your choice at any time under <strong>Profile › About › Ad settings</strong>, which reopens the dialog. Elsewhere this row is not shown, because there is no consent to change. Withdrawing consent for Meta there (Android) stops the app sending anything further to Meta.</li>
 <li><strong>Android</strong>: you can delete your advertising ID or opt out of ads personalisation in your device settings, usually under <strong>Settings › Privacy › Ads</strong> (the exact path differs per phone).</li>
-<li><strong>iOS</strong>: you can switch tracking off for Culpa at any time under <strong>Settings › Privacy &amp; Security › Tracking</strong>. Ads are then shown without the advertising identifier.</li>
+<li><strong>iOS</strong>: Culpa does not track you and only shows non-personalised ads, so there is no tracking setting to change for Culpa.</li>
 </ul>
 
 <h2>9. Deleting your data</h2>
