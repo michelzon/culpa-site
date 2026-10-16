@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Culpa – Privacy Policy</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Culpa - Privacy Policy</title><style>
 :root{--ink:#14112B;--paper:#F3EBDA;--brass:#D9A94E;--muted:#6b6580}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
 header{background:var(--ink);color:var(--paper);padding:28px 20px}
@@ -13,11 +13,14 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </style></head>
 <body><header><div class="wrap"><span class="brand">Culpa</span><a href="privacy-nl.html">Nederlands</a></div></header>
 <main><h1>Privacy Policy - Culpa</h1>
-<p><strong>Last updated: 13 October 2026</strong></p>
-<p>This privacy policy explains what data the Culpa app ("Culpa", "the app", "we", "us") collects, why, and what choices you have. It applies to the Android app published under the package <code>com.michelzondag.culpa</code> and, once released, the iOS version.</p>
-<p>Culpa is developed by an individual developer, <strong>Michel Zondag</strong> ("the developer"). If you have questions about this policy or your data, contact <strong>info@michelzondag.com</strong>.</p>
-<h2>1. No account required</h2>
-<p>Culpa does not require you to create an account, and we never ask for your name, email address, or any other directly identifying information to play the game. Your progress, purchases, and settings are stored on your device. There is no Google Play Games Services sign-in and no cloud save in this release: nothing carries your progress off the device.</p>
+<p><strong>Last updated: 16 October 2026</strong></p>
+<p>This privacy policy explains what data the Culpa app ("Culpa", "the app", "we", "us") collects, why, and what choices you have. It applies to the Culpa app on <strong>Android</strong> (Google Play, package <code>com.michelzondag.culpa</code>) and on <strong>iOS</strong> (App Store). Most of it is the same on both. Where the two differ, this policy says so.</p>
+<p>Culpa is developed by an individual developer, <strong>Michel Zondag, trading as Culpa</strong> ("the developer"), based in the Netherlands, who is responsible for the data described here. If you have questions about this policy or your data, contact <strong>info@michelzondag.com</strong>.</p>
+
+<h2>1. No account needed</h2>
+<p>You do not need to create an account to play, and we never ask for your name, email address or any other details that identify you directly. Your progress, purchases and settings are stored on your device. There is no sign-in with Google Play Games, Apple Game Center or iCloud, and no cloud save: your game progress does not leave your device.</p>
+<p>For the world leaderboard, the app quietly creates an anonymous player ID for you (see §2). It is not linked to your name, email address, Google account or Apple ID, and you can delete it yourself in the app (see §9).</p>
+
 <h2>2. What we collect, and why</h2>
 <table>
 <thead>
@@ -30,86 +33,131 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 <tbody>
 <tr>
 <td><strong>Device and advertising identifiers</strong></td>
-<td>Advertising ID (AAID), device model, OS version, IP-derived approximate location, app instance ID</td>
+<td>Android: the advertising ID of your device.<br>iOS: the advertising identifier (IDFA), only if you allow tracking when iOS asks (see §4 and §8).<br>Both: device model, operating system version, approximate location derived from your IP address, an app instance ID</td>
 <td>To show and measure ads, to detect fraud, and to understand which install came from which ad campaign</td>
 </tr>
 <tr>
 <td><strong>Purchase history</strong></td>
-<td>Which in-app products you bought (e.g. <code>remove_ads</code>, case packs, hints), transaction ID, price and currency</td>
-<td>To unlock the content you paid for, to verify purchases, and to measure revenue by acquisition source</td>
+<td>Which in-app products you bought (for example <code>remove_ads</code>, case packs, hints), transaction ID, price and currency</td>
+<td>To unlock the content you paid for and to measure revenue by advertising source</td>
 </tr>
 <tr>
 <td><strong>App interaction data</strong></td>
-<td>Screens visited, cases started/solved/abandoned, hints used, ad views, session length, daily streak</td>
-<td>To understand how the app is used, fix problems, and calibrate puzzle difficulty</td>
+<td>Screens visited, cases started, solved or abandoned, hints used, ad views, session length, daily streak, whether you opened a case from a reminder</td>
+<td>To understand how the app is used, fix problems, and tune puzzle difficulty</td>
 </tr>
 <tr>
-<td><strong>Crash and diagnostic data</strong></td>
-<td>Stack traces, device state at time of crash, app version</td>
-<td>To find and fix bugs and stability issues</td>
+<td><strong>Crash, diagnostic and performance data</strong></td>
+<td>Crash reports, device state at the time of a crash, app version, start-up time and similar performance data collected by the ad software</td>
+<td>To find and fix bugs and keep the app and its ads running smoothly</td>
 </tr>
 </tbody>
 </table>
 <p>We do <strong>not</strong> collect your name, email address, precise GPS location, contacts, photos, or any content you did not choose to share (such as a shared solve time, which contains only a number and, if you opt in, your country).</p>
+
 <h3>The world leaderboard</h3>
-<p>When you finish the daily or the weekly case, Culpa sends that one solve to the world leaderboard: the solve time, how many hints it took, a two-letter country code read from your device's language settings (never from GPS), an anonymous player id that Firebase Anonymous Authentication hands out, and, only if you typed one yourself, a detective name of at most 16 characters. The entry also carries your detective rank and, from version 1.5, your level in the game (for example "Lv 14 · Inspector"), which other players see next to your time. A name is off by default; without one you appear on the board as "Detective" plus the last four characters of that anonymous id, which is tied to no name, email address or Google account. Entries are stored in Google Cloud Firestore in the EU (region <code>eur3</code>) and can be read by anyone playing Culpa, so please do not put anything in the name field you would not want other players to see. Each row on the board has a report button, which stores the reported entry, the board it is on and the anonymous id of the player who reported it, so a name can be reviewed and removed.</p>
-<h2>3. Who processes this data</h2>
-<p>Culpa uses the following third-party services, each of which processes data under its own privacy policy:</p>
+<p>When you finish the daily or the weekly case, Culpa sends that one solve to the world leaderboard: the solve time, how many hints it took, a two-letter country code for your flag (the one you picked, or else one worked out from your device's language and time zone settings, never from GPS), your detective rank and your level in the game (for example "Lv 14 · Inspector"), and the anonymous player ID described in §1. Other players see your time, hints, flag, rank and level.</p>
 <ul>
-<li><strong>Google Firebase Analytics</strong> - app usage and event data, to understand engagement and retention. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-<li><strong>Google Firebase Crashlytics</strong> - crash and diagnostic data, to keep the app stable.</li>
-<li><strong>Google AdMob</strong>, including its mediation partners - shows ads (rewarded video, interstitial, and optionally banner) and uses device/advertising identifiers to select and measure ads. Mediation partners may include other ad networks certified by Google; each operates under its own privacy policy, listed in the in-app UMP consent message.</li>
-<li><strong>Google Play Billing</strong> - processes your in-app purchases. Culpa never sees your payment card details; Google Play handles payment directly.</li>
-<li><strong>Google Cloud Firestore and Firebase Authentication</strong> - stores the world leaderboard entries described in §2 and hands out the anonymous player id they are filed under. No sign-in, name or email address is involved.</li>
-<li><strong>Meta Platforms (Facebook, Instagram) App Events</strong> - tells us which Meta ads bring players to Culpa. Only if the app may request ads, and in the EEA, the UK and Switzerland only if you allowed Meta in the consent dialog, Meta receives: that the app was installed and opened, the first time you solve a case (the case number), and a purchase (product, price, currency and the store's order number), together with your device's advertising ID and an anonymous app ID that Meta's software creates on your device. No name, email address, phone number or location is sent. Meta and the developer are joint controllers for collecting and transmitting this data; Meta then processes it as an independent controller under its own policy, which includes delivering and improving its ads. We switch on Meta's Limited Data Use option, which Meta applies in the US states where it is required. <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></li>
+<li><strong>Android:</strong> you may type a detective name of at most 16 characters. A name is off by default. Without one you appear as "Detective" plus the last four characters of your anonymous ID. Please do not put anything in the name field you would not want other players to see.</li>
+<li><strong>iOS:</strong> you cannot choose your own name. Everyone appears as "Detective" plus the last four characters of their anonymous ID. Because there is no player-made text, there is no report button on iOS.</li>
 </ul>
-<p>Not in this release: Culpa ships no Google Play Games Services. If it is ever added, this section and the Play Data safety form are updated before that build goes out.</p>
-<p>We do not sell your data. Data is shared with these providers only to operate the app, show ads, process payments, and measure advertising performance.</p>
+<p>Entries are stored in Google Cloud Firestore in the EU (region <code>eur3</code>) and can be read by anyone playing Culpa. On Android each row on the board has a report button. A report stores the reported entry, the board it is on and the anonymous ID of the player who reported it, so an entry can be reviewed and removed. You can delete your own leaderboard data at any time in the app (see §9).</p>
+
+<h3>Reminders (notifications)</h3>
+<p>Culpa can remind you of the daily case or your streak. These reminders are planned by the app on your device itself. No message server is involved and no notification token leaves your device. Android and iOS ask your permission before Culpa can show them. You can switch reminders off in the app (Profile) or in your device's notification settings.</p>
+
+<h3>Saving a share image (iOS)</h3>
+<p>If you share a solve and choose to save the image to Photos, iOS asks whether Culpa may add photos. This permission only lets the app add that image. Culpa cannot see or read your photos.</p>
+
+<h2>3. Who processes this data</h2>
+<p>Culpa uses the following services. Each of them is bound by its own terms and privacy policy to protect the data it receives at least as well as this policy describes.</p>
+<ul>
+<li><strong>Google Firebase Analytics</strong> (Android and iOS): app usage and event data, to understand how players use the game. <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><strong>Google Firebase Crashlytics</strong> (Android and iOS): crash and diagnostic data, to keep the app stable.</li>
+<li><strong>Google Firebase Remote Config</strong> (Android and iOS): lets us switch a feature, such as a banner test, on or off without an app update. It uses an installation ID created by Firebase.</li>
+<li><strong>Google AdMob</strong>, including its mediation partners (Android and iOS): shows ads (rewarded video, interstitial and in some cases a banner) and uses device and advertising identifiers to select and measure ads. Mediation partners may include other ad networks certified by Google. Each works under its own privacy policy, listed in the consent dialog in the app.</li>
+<li><strong>Google Cloud Firestore and Firebase Authentication</strong> (Android and iOS): store the world leaderboard entries described in §2 and hand out the anonymous player ID they are filed under. No sign-in, name or email address is involved.</li>
+<li><strong>Firebase App Check</strong> (Android and iOS): checks that requests to the leaderboard come from a genuine copy of Culpa, so scores cannot be faked from outside the app. On Android this uses Google Play Integrity. On iOS it uses Apple App Attest, or Apple DeviceCheck on devices that do not support App Attest.</li>
+<li><strong>Google Play Billing</strong> (Android only): processes your in-app purchases. Culpa never sees your payment details. Google Play handles payment directly.</li>
+<li><strong>Apple App Store</strong> (iOS only): processes your in-app purchases. Culpa never sees your payment details. Apple handles payment directly.</li>
+<li><strong>Meta Platforms (Facebook, Instagram) App Events</strong> (<strong>Android only</strong>; the iOS app sends nothing to Meta): tells us which Meta ads bring players to Culpa. Only if the app may request ads, and in the EEA, the UK and Switzerland only if you allowed Meta in the consent dialog, Meta receives: that the app was installed and opened, the first time you solve a case (the case number), and a purchase (product, price, currency and the store's order number), together with your device's advertising ID and an anonymous app ID that Meta's software creates on your device. No name, email address, phone number or location is sent. Meta and the developer are joint controllers for collecting and sending this data. Meta then processes it as an independent controller under its own policy, which includes delivering and improving its ads. We switch on Meta's Limited Data Use option, which Meta applies in the US states where it is required. <a href="https://www.facebook.com/privacy/policy/">Meta Privacy Policy</a></li>
+</ul>
+<p>Culpa does not use Google Play Games Services or Apple Game Center. If that ever changes, this policy, the Google Play Data safety form and the App Store privacy details are updated before that version goes out.</p>
+<p>We do not sell your data. Data is shared with these providers only to run the app, show ads, process payments and measure advertising performance.</p>
+
 <h2>4. Legal basis for processing</h2>
 <ul>
-<li><strong>In the European Economic Area, the UK, and other regions with similar consent requirements</strong>: personalized advertising and related analytics/attribution processing occur only after you give consent through the in-app <strong>Google User Messaging Platform (UMP)</strong> consent dialog, shown on first launch. If you decline or only partially consent, Culpa shows non-personalized ads and limits data collection accordingly, following the choices UMP reports back to the app. This includes Meta: the app sends nothing to Meta unless you allow Meta in that dialog.</li>
-<li><strong>Outside the EEA/UK, where local law permits</strong>: we rely on <strong>legitimate interest</strong> to process device identifiers and interaction data for analytics, fraud prevention, and advertising, balanced against your rights. Where local law requires consent (e.g. under similar frameworks elsewhere), we obtain it through the same UMP flow, region-adjusted.</li>
-<li><strong>Purchase data</strong> is processed because it is necessary to perform our contract with you (delivering what you bought) and to comply with tax and accounting obligations.</li>
+<li><strong>In the European Economic Area, the UK, Switzerland and other regions with similar consent rules</strong>: personalised advertising and the related analytics and attribution happen only after you agree in the consent dialog in the app (Google User Messaging Platform), shown when you first play. If you decline or only partly agree, Culpa shows non-personalised ads and limits data collection to match the choices that dialog reports back to the app. This includes Meta on Android: the app sends nothing to Meta unless you allow Meta in that dialog.</li>
+<li><strong>Outside those regions, where local law allows it</strong>: we rely on <strong>legitimate interest</strong> to process device identifiers and interaction data for analytics, fraud prevention and advertising, balanced against your rights. Where local law requires consent, we ask for it through the same dialog, adjusted to your region.</li>
+<li><strong>iOS tracking permission</strong>: on iOS, Apple also asks whether Culpa may track you across apps and websites owned by other companies (App Tracking Transparency). Culpa asks this after the consent dialog, where that dialog applies. If you choose "Ask App Not to Track", ads are shown without the advertising identifier. The game works the same either way.</li>
+<li><strong>Purchase data</strong> is processed because it is needed to deliver what you bought and to meet tax and accounting obligations.</li>
+<li><strong>Leaderboard data</strong> is processed because it is needed to run the world leaderboard you take part in.</li>
 </ul>
-<h2>5. Data retention</h2>
+
+<h2>5. How long we keep data</h2>
 <ul>
-<li><strong>Analytics and crash data</strong>: retained by Google Firebase for up to 14 months (Firebase Analytics default) unless you request deletion sooner.</li>
-<li><strong>Purchase records</strong>: retained as long as needed to honor your purchase and for the legally required accounting period, typically up to 7 years.</li>
-<li><strong>Local app data</strong> (progress, settings, cached packs): stays on your device until you uninstall the app or clear its data.</li>
-<li><strong>Leaderboard entries for the daily and weekly case</strong> (solve time, hint count, country, rank and level, anonymous player id, and no name unless you opt in): retained for a limited period for the leaderboard to function, then aggregated or deleted. Reports filed with the report button are kept until they have been reviewed.</li>
+<li><strong>Analytics data</strong>: kept by Google Analytics for at most 14 months.</li>
+<li><strong>Crash data</strong>: Crashlytics keeps crash reports for 90 days.</li>
+<li><strong>Purchase records</strong>: kept as long as needed to honour your purchase and for the legally required accounting period, usually up to 7 years. Google Play and Apple also keep their own records of your purchases under their own policies.</li>
+<li><strong>Local app data</strong> (progress, settings, downloaded packs): stays on your device until you uninstall the app or clear its data.</li>
+<li><strong>Leaderboard entries</strong> (solve time, hint count, country, rank and level, anonymous player ID, and on Android a name only if you typed one): kept until you delete them in the app (§9), and for at most 12 months after your last activity on the leaderboard.</li>
+<li><strong>Anonymous player ID</strong>: kept until you delete it in the app (§9). After that, Google removes it from its systems within 180 days.</li>
+<li><strong>Reports</strong> filed with the report button: kept until they have been reviewed, then deleted.</li>
 </ul>
+
 <h2>6. Children</h2>
-<p>Culpa is rated <strong>PEGI 7</strong> and is <strong>not directed at children under 13</strong> (or the equivalent minimum age in your country). We do not knowingly collect personal data from children. Because the app is for users of 13 and up, we do not tag consent requests as coming from a user under the age of consent (<code>tagForUnderAgeOfConsent</code> is set to false), so everyone is asked the same consent question and everyone can reopen their choice from Settings. If you believe a child has provided us with personal data, contact us at <strong>info@michelzondag.com</strong> and we will delete it.</p>
+<p>Culpa is meant for players aged <strong>13 and over</strong> (or the higher minimum age in your country). It is <strong>not directed at children under 13</strong>. On the App Store the app is rated 13+. On Google Play it has a PEGI 7 content rating, which describes the content, not the intended age. We do not knowingly collect personal data from children. Because the app is meant for players of 13 and up, we do not mark consent requests as coming from a child, so everyone gets the same consent question. If you believe a child has given us personal data, contact <strong>info@michelzondag.com</strong> and we will delete it.</p>
+
 <h2>7. Your rights</h2>
-<p>Depending on where you live, you may have the right to:</p>
+<p>Under the EU General Data Protection Regulation (GDPR) and similar laws elsewhere, you have the right to:</p>
 <ul>
-<li>Access the data we hold about you</li>
-<li>Correct inaccurate data</li>
-<li>Request deletion of your data</li>
+<li>See the data we hold about you</li>
+<li>Have incorrect data corrected</li>
+<li>Have your data deleted (you can delete your leaderboard data yourself in the app, see §9)</li>
 <li>Object to or restrict certain processing</li>
 <li>Withdraw consent at any time (this does not affect processing already carried out)</li>
-<li>Data portability, where applicable</li>
-<li>Lodge a complaint with your local data protection authority</li>
+<li>Receive your data in a portable format, where this applies</li>
+<li>Complain to a data protection authority. In the Netherlands, where the developer is based, this is the <a href="https://autoriteitpersoonsgegevens.nl/">Autoriteit Persoonsgegevens</a>. You can also go to the authority in your own country.</li>
 </ul>
-<p>To exercise any of these rights, email <strong>info@michelzondag.com</strong> with your request. Because Culpa does not require an account, we may ask for details such as your device's advertising ID or purchase transaction ID to locate relevant data - we will never ask for your password or payment details.</p>
-<h2>8. Withdrawing advertising consent</h2>
-<p>You can review or change your advertising consent at any time in the app: <strong>Settings › Ad settings</strong>, which re-opens the UMP consent dialog. You can also limit ad tracking through your device's own settings (Android: <strong>Settings › Privacy › Ads</strong>, "Delete advertising ID" or "Opt out of ads personalization"). Withdrawing consent for Meta there stops the app sending anything further to Meta.</p>
-<h2>9. Data deletion requests</h2>
-<p>Because Culpa has no account system, most of your data lives only on your device and is deleted the moment you uninstall the app or clear its storage. To request deletion of data held by us or our processors (e.g. analytics or crash records tied to your device/advertising identifiers, or purchase records we must reconcile), email <strong>info@michelzondag.com</strong> with:</p>
+<p>To use any of these rights, email <strong>info@michelzondag.com</strong>. We answer within one month. Because Culpa has no accounts, we may ask for details that help us find your data, such as the approximate dates you played, your device model, the last four characters of your leaderboard name, or a purchase order number. We will never ask for a password or payment details.</p>
+
+<h2>8. Changing your ad choices</h2>
+<ul>
+<li><strong>In the app</strong>: where the consent dialog applies (such as the EEA, the UK and Switzerland), you can change your choice at any time under <strong>Profile › About › Ad settings</strong>, which reopens the dialog. Elsewhere this row is not shown, because there is no consent to change. Withdrawing consent for Meta there (Android) stops the app sending anything further to Meta.</li>
+<li><strong>Android</strong>: you can delete your advertising ID or opt out of ads personalisation in your device settings, usually under <strong>Settings › Privacy › Ads</strong> (the exact path differs per phone).</li>
+<li><strong>iOS</strong>: you can switch tracking off for Culpa at any time under <strong>Settings › Privacy &amp; Security › Tracking</strong>. Ads are then shown without the advertising identifier.</li>
+</ul>
+
+<h2>9. Deleting your data</h2>
+<h3>In the app (Android and iOS)</h3>
+<p>Go to <strong>Profile › About › Delete leaderboard data</strong>. The app first tells you what will be deleted and asks you to confirm. Then it:</p>
 <ol>
-<li>The approximate date(s) you used the app</li>
-<li>Your device's advertising ID, if known (<strong>Settings › Privacy › Ads</strong> on Android), or a purchase transaction ID</li>
+<li>deletes your times from every daily and weekly leaderboard, under the anonymous player ID this installation uses,</li>
+<li>deletes your anonymous player ID. If Google does not allow that at that moment, the app stops using the ID on this device and tells you so. The ID then no longer has any leaderboard data,</li>
+<li>clears your detective name and any scores still waiting to be sent from your device.</li>
 </ol>
-<p>We will confirm deletion within 30 days, except where we are legally required to retain purchase/accounting records for longer.</p>
+<p>You see a confirmation when it is done. If the leaderboard cannot be reached, nothing is deleted and the app tells you to try again later. Your game progress, purchases and settings are not affected: they never left your device. If you play a daily or weekly case after this, you get a new anonymous ID. Reports you filed with the report button stay until they have been reviewed.</p>
+<p>If your version of the app does not show this option yet, update the app or email us.</p>
+<h3>Other data</h3>
+<p>Data on your device is deleted when you uninstall the app or clear its storage. To ask us to delete other data, such as analytics or crash records, purchase records, or leaderboard entries the app could not find (for example from an earlier installation), email <strong>info@michelzondag.com</strong> with:</p>
+<ol>
+<li>the approximate dates you used the app and your device model, and</li>
+<li>if you have it: the last four characters of your leaderboard name, your Android advertising ID, or a purchase order number (Google Play order number, or the order ID in your Apple purchase history).</li>
+</ol>
+<p>We confirm deletion within one month, except where the law requires us to keep purchase or accounting records for longer.</p>
+
 <h2>10. Security</h2>
-<p>Data in transit to our third-party processors (Firebase, AdMob, Google Play Billing, Meta) is encrypted using industry-standard TLS. We do not store payment card data ourselves; Google Play Billing handles that directly.</p>
+<p>Data sent to the services in §3 is encrypted in transit with industry-standard TLS. App Check helps keep fake requests away from the leaderboard. We do not store payment details ourselves: Google Play (Android) and Apple (iOS) handle payment directly.</p>
+
 <h2>11. International data transfers</h2>
-<p>Our processors, Google and Meta, may process and store data outside your country, including in the United States, under the EU-U.S. Data Privacy Framework, their standard contractual clauses or equivalent safeguards. See each provider's privacy policy linked in §3 for details.</p>
+<p>Google, Apple and, on Android, Meta may process and store data outside your country, including in the United States, under the EU-U.S. Data Privacy Framework, standard contractual clauses or equivalent safeguards. See each provider's privacy policy for details.</p>
+
 <h2>12. Changes to this policy</h2>
-<p>We may update this policy as the app changes or as legal requirements evolve. The "Last updated" date at the top will reflect the most recent revision. Material changes will be reflected in the in-app UMP consent flow where required.</p>
+<p>We may update this policy when the app changes or the law changes. The "Last updated" date at the top shows the latest version. Where required, important changes are also shown in the consent dialog in the app.</p>
+
 <h2>13. Contact</h2>
-<p><strong>Developer:</strong> Michel Zondag
-<strong>Email:</strong> info@michelzondag.com
-<strong>App:</strong> Culpa (package <code>com.michelzondag.culpa</code>)</p>
+<p><strong>Developer:</strong> Michel Zondag, trading as Culpa<br>
+<strong>Email:</strong> info@michelzondag.com<br>
+<strong>App:</strong> Culpa (Android package <code>com.michelzondag.culpa</code>, and Culpa on the App Store)</p>
 <hr />
-<p><em>This policy is also available in Dutch: <code>privacy-policy.nl.md</code>.</em></p></main><footer>&copy; 2026 Michel Zondag &middot; <a href="index.html">culpa</a></footer></body></html>
+<p><em>This policy is also available in <a href="privacy-nl.html">Dutch</a>.</em></p></main><footer>&copy; 2026 Michel Zondag &middot; <a href="index.html">culpa</a></footer></body></html>
