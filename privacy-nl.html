@@ -1,4 +1,4 @@
-<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Culpa – Privacybeleid</title><style>
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Culpa - Privacyverklaring</title><style>
 :root{--ink:#14112B;--paper:#F3EBDA;--brass:#D9A94E;--muted:#6b6580}
 body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
 header{background:var(--ink);color:var(--paper);padding:28px 20px}
@@ -13,11 +13,14 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </style></head>
 <body><header><div class="wrap"><span class="brand">Culpa</span><a href="privacy.html">English</a></div></header>
 <main><h1>Privacyverklaring - Culpa</h1>
-<p><strong>Laatst bijgewerkt: 13 oktober 2026</strong></p>
-<p>Deze privacyverklaring legt uit welke gegevens de app Culpa ("Culpa", "de app", "wij", "we") verzamelt, waarom, en welke keuzes je hebt. Ze geldt voor de Android-app onder pakketnaam <code>com.michelzondag.culpa</code> en, zodra die uitkomt, de iOS-versie.</p>
-<p>Culpa wordt ontwikkeld door een individuele ontwikkelaar, <strong>Michel Zondag</strong> ("de ontwikkelaar"). Vragen over deze verklaring of je gegevens kun je sturen naar <strong>info@michelzondag.com</strong>.</p>
+<p><strong>Laatst bijgewerkt: 16 oktober 2026</strong></p>
+<p>Deze privacyverklaring legt uit welke gegevens de app Culpa ("Culpa", "de app", "wij", "we") verzamelt, waarom, en welke keuzes je hebt. Ze geldt voor Culpa op <strong>Android</strong> (Google Play, pakketnaam <code>com.michelzondag.culpa</code>) en op <strong>iOS</strong> (App Store). Bijna alles is op beide gelijk. Waar ze verschillen, staat dat erbij.</p>
+<p>Culpa wordt ontwikkeld door een individuele ontwikkelaar, <strong>Michel Zondag, handelend als Culpa</strong> ("de ontwikkelaar"), gevestigd in Nederland, die verantwoordelijk is voor de gegevens in deze verklaring. Vragen over deze verklaring of je gegevens kun je sturen naar <strong>info@michelzondag.com</strong>.</p>
+
 <h2>1. Geen account nodig</h2>
-<p>Voor Culpa hoef je geen account aan te maken, en we vragen nooit om je naam, e-mailadres of andere direct identificerende gegevens om te spelen. Je voortgang, aankopen en instellingen worden op je apparaat opgeslagen. In deze versie is er geen inlog bij Google Play Games Services en geen cloud save: niets neemt je voortgang mee van je apparaat af.</p>
+<p>Je hoeft geen account aan te maken om te spelen, en we vragen nooit om je naam, e-mailadres of andere gegevens die direct naar jou wijzen. Je voortgang, aankopen en instellingen staan op je toestel. Er is geen inlog met Google Play Games, Apple Game Center of iCloud en geen cloud save: je spelvoortgang verlaat je toestel niet.</p>
+<p>Voor de wereldranglijst maakt de app op de achtergrond een anoniem speler-ID voor je aan (zie §2). Dat is niet gekoppeld aan je naam, e-mailadres, Google-account of Apple ID, en je kunt het zelf in de app verwijderen (zie §9).</p>
+
 <h2>2. Wat we verzamelen, en waarom</h2>
 <table>
 <thead>
@@ -29,87 +32,132 @@ footer{max-width:760px;margin:0 auto;padding:0 20px 40px;color:var(--muted);font
 </thead>
 <tbody>
 <tr>
-<td><strong>Apparaat- en advertentie-identificatoren</strong></td>
-<td>Advertising ID (AAID), apparaatmodel, OS-versie, bij benadering afgeleide locatie op basis van IP, app-instance-ID</td>
+<td><strong>Apparaat- en advertentie-ID's</strong></td>
+<td>Android: de advertentie-ID van je toestel.<br>iOS: de advertentie-ID (IDFA), alleen als je toestaat dat de app je volgt wanneer iOS dat vraagt (zie §4 en §8).<br>Beide: toestelmodel, versie van het besturingssysteem, globale locatie afgeleid uit je IP-adres, een app-instance-ID</td>
 <td>Om advertenties te tonen en te meten, fraude te herkennen, en te begrijpen welke installatie uit welke advertentiecampagne komt</td>
 </tr>
 <tr>
 <td><strong>Aankoopgeschiedenis</strong></td>
-<td>Welke in-app-producten je kocht (bijv. <code>remove_ads</code>, dossierpakketten, hints), transactie-ID, prijs en valuta</td>
-<td>Om de content die je kocht te ontgrendelen, aankopen te verifiëren, en omzet per advertentiebron te meten</td>
+<td>Welke in-app-producten je kocht (bijvoorbeeld <code>remove_ads</code>, dossierpakketten, hints), transactie-ID, prijs en valuta</td>
+<td>Om de content die je kocht te ontgrendelen en omzet per advertentiebron te meten</td>
 </tr>
 <tr>
-<td><strong>App-interactiegegevens</strong></td>
-<td>Bezochte schermen, gestarte/opgeloste/afgebroken zaken, gebruikte hints, advertentieweergaven, sessieduur, dagelijkse streak</td>
-<td>Om te begrijpen hoe de app gebruikt wordt, problemen op te lossen, en de puzzelmoeilijkheid te kalibreren</td>
+<td><strong>Gegevens over app-gebruik</strong></td>
+<td>Bezochte schermen, gestarte, opgeloste of afgebroken zaken, gebruikte hints, advertentieweergaven, sessieduur, dagelijkse reeks, of je een zaak via een herinnering opende</td>
+<td>Om te begrijpen hoe de app gebruikt wordt, problemen op te lossen en de moeilijkheid van puzzels af te stemmen</td>
 </tr>
 <tr>
-<td><strong>Crash- en diagnostische gegevens</strong></td>
-<td>Stack traces, apparaatstatus op moment van crash, app-versie</td>
-<td>Om bugs en stabiliteitsproblemen op te sporen en te verhelpen</td>
+<td><strong>Crash-, diagnose- en prestatiegegevens</strong></td>
+<td>Crashrapporten, toestand van het toestel bij een crash, app-versie, opstarttijd en vergelijkbare prestatiegegevens die de advertentiesoftware verzamelt</td>
+<td>Om fouten op te sporen en te verhelpen en de app en de advertenties soepel te laten werken</td>
 </tr>
 </tbody>
 </table>
-<p>We verzamelen <strong>geen</strong> naam, e-mailadres, exacte GPS-locatie, contacten, foto's of andere inhoud die je niet zelf hebt gekozen te delen (zoals een gedeelde oplostijd, die alleen een getal bevat en, indien je daarvoor kiest, je land).</p>
+<p>We verzamelen <strong>geen</strong> naam, e-mailadres, exacte GPS-locatie, contacten, foto's of andere inhoud die je niet zelf hebt gekozen te delen (zoals een gedeelde oplostijd, die alleen een getal bevat en, als je daarvoor kiest, je land).</p>
+
 <h3>De wereldranglijst</h3>
-<p>Als je de zaak van de dag of de zaak van de week oplost, stuurt Culpa die ene oplossing naar de wereldranglijst: de oplostijd, het aantal gebruikte hints, een landcode van twee letters uit de taalinstellingen van je toestel (nooit uit GPS), een anoniem speler-ID dat Firebase Anonymous Authentication uitgeeft, en alleen als je die zelf typt een detectivenaam van hoogstens 16 tekens. De inzending bevat ook je detectiverang en, vanaf versie 1.5, je level in het spel (bijvoorbeeld "Lv 14 · Inspecteur"); andere spelers zien die naast je tijd. Een naam staat standaard uit; zonder naam sta je op de ranglijst als "Detective" plus de laatste vier tekens van dat anonieme ID, dat aan geen enkele naam, e-mailadres of Google-account gekoppeld is. De inzendingen staan in Google Cloud Firestore in de EU (regio <code>eur3</code>) en zijn leesbaar voor iedereen die Culpa speelt, dus zet in het naamveld niets wat je liever niet door andere spelers laat lezen. Elke rij op de ranglijst heeft een meldknop; een melding bewaart de gemelde inzending, de ranglijst waar die op staat en het anonieme ID van de speler die meldde, zodat een naam beoordeeld en verwijderd kan worden.</p>
+<p>Als je de zaak van de dag of de zaak van de week oplost, stuurt Culpa die ene oplossing naar de wereldranglijst: de oplostijd, het aantal gebruikte hints, een landcode van twee letters voor je vlag (die je zelf koos, of anders een die de app afleidt uit de taal- en tijdzone-instellingen van je toestel, nooit uit GPS), je detectiverang en je level in het spel (bijvoorbeeld "Lv 14 · Inspecteur"), en het anonieme speler-ID uit §1. Andere spelers zien je tijd, hints, vlag, rang en level.</p>
+<ul>
+<li><strong>Android:</strong> je kunt een detectivenaam van hoogstens 16 tekens typen. Een naam staat standaard uit. Zonder naam sta je op de ranglijst als "Detective" plus de laatste vier tekens van je anonieme ID. Zet in het naamveld niets wat je liever niet door andere spelers laat lezen.</li>
+<li><strong>iOS:</strong> je kunt geen eigen naam kiezen. Iedereen staat op de ranglijst als "Detective" plus de laatste vier tekens van zijn anonieme ID. Omdat er geen tekst van spelers is, heeft iOS geen meldknop.</li>
+</ul>
+<p>De inzendingen staan in Google Cloud Firestore in de EU (regio <code>eur3</code>) en zijn leesbaar voor iedereen die Culpa speelt. Op Android heeft elke rij op de ranglijst een meldknop. Een melding bewaart de gemelde inzending, de ranglijst waar die op staat en het anonieme ID van de speler die meldde, zodat een inzending beoordeeld en verwijderd kan worden. Je kunt je eigen ranglijstgegevens altijd zelf in de app verwijderen (zie §9).</p>
+
+<h3>Herinneringen (meldingen)</h3>
+<p>Culpa kan je herinneren aan de zaak van de dag of aan je reeks. Die herinneringen plant de app zelf op je toestel. Er komt geen berichtenserver aan te pas en er gaat geen meldingstoken van je toestel af. Android en iOS vragen je toestemming voordat Culpa ze mag tonen. Je zet herinneringen uit in de app (Profiel) of in de meldingsinstellingen van je toestel.</p>
+
+<h3>Een deelafbeelding bewaren (iOS)</h3>
+<p>Als je een oplossing deelt en de afbeelding in Foto's wilt bewaren, vraagt iOS of Culpa foto's mag toevoegen. Met die toestemming kan de app alleen die afbeelding toevoegen. Culpa kan je foto's niet zien of lezen.</p>
+
 <h2>3. Wie verwerkt deze gegevens</h2>
-<p>Culpa maakt gebruik van de volgende diensten van derden, elk werkend onder hun eigen privacyverklaring:</p>
+<p>Culpa gebruikt de volgende diensten. Elk daarvan is door zijn eigen voorwaarden en privacybeleid gebonden om de gegevens die het ontvangt minstens zo goed te beschermen als deze verklaring beschrijft.</p>
 <ul>
-<li><strong>Google Firebase Analytics</strong> - app-gebruiks- en eventgegevens, om betrokkenheid en retentie te begrijpen. <a href="https://policies.google.com/privacy">Privacyverklaring van Google</a></li>
-<li><strong>Google Firebase Crashlytics</strong> - crash- en diagnostische gegevens, om de app stabiel te houden.</li>
-<li><strong>Google AdMob</strong>, inclusief mediation-partners - toont advertenties (rewarded video, interstitial en optioneel banner) en gebruikt apparaat-/advertentie-identificatoren om advertenties te selecteren en te meten. Mediation-partners kunnen andere door Google gecertificeerde advertentienetwerken zijn; elk werkt onder zijn eigen privacyverklaring, vermeld in het UMP-toestemmingsscherm in de app.</li>
-<li><strong>Google Play Billing</strong> - verwerkt je in-app-aankopen. Culpa ziet nooit je betaalkaartgegevens; Google Play handelt betalingen rechtstreeks af.</li>
-<li><strong>Google Cloud Firestore en Firebase Authentication</strong> - bewaren de inzendingen voor de wereldranglijst uit §2 en geven het anonieme speler-ID uit waaronder die staan. Er komt geen inlog, naam of e-mailadres aan te pas.</li>
-<li><strong>Meta Platforms (Facebook, Instagram) App Events</strong> - laat ons zien welke Meta-advertenties spelers naar Culpa brengen. Alleen als de app advertenties mag opvragen, en in de EER, het VK en Zwitserland alleen als je Meta in het toestemmingsscherm hebt toegestaan, ontvangt Meta: dat de app is geïnstalleerd en geopend, de eerste keer dat je een zaak oplost (het zaaknummer), en een aankoop (product, prijs, valuta en het bestelnummer van de winkel), samen met de advertentie-ID van je toestel en een anoniem app-ID dat de software van Meta op je toestel aanmaakt. Er gaat geen naam, e-mailadres, telefoonnummer of locatie mee. Meta en de ontwikkelaar zijn gezamenlijk verwerkingsverantwoordelijk voor het verzamelen en doorsturen van deze gegevens; daarna verwerkt Meta ze als zelfstandig verantwoordelijke onder zijn eigen beleid, waaronder het leveren en verbeteren van zijn advertenties. We zetten Meta's optie Limited Data Use aan, die Meta toepast in de Amerikaanse staten waar dat vereist is. <a href="https://www.facebook.com/privacy/policy/">Privacybeleid van Meta</a></li>
+<li><strong>Google Firebase Analytics</strong> (Android en iOS): gebruiks- en eventgegevens, om te begrijpen hoe spelers het spel gebruiken. <a href="https://policies.google.com/privacy">Privacyverklaring van Google</a></li>
+<li><strong>Google Firebase Crashlytics</strong> (Android en iOS): crash- en diagnosegegevens, om de app stabiel te houden.</li>
+<li><strong>Google Firebase Remote Config</strong> (Android en iOS): hiermee zetten we een functie, zoals een bannertest, aan of uit zonder app-update. Het gebruikt een installatie-ID dat Firebase aanmaakt.</li>
+<li><strong>Google AdMob</strong>, inclusief mediation-partners (Android en iOS): toont advertenties (video met beloning, tussenadvertenties en soms een banner) en gebruikt apparaat- en advertentie-ID's om advertenties te kiezen en te meten. Mediation-partners kunnen andere door Google gecertificeerde advertentienetwerken zijn. Elk werkt onder zijn eigen privacybeleid, dat in het toestemmingsscherm in de app staat.</li>
+<li><strong>Google Cloud Firestore en Firebase Authentication</strong> (Android en iOS): bewaren de inzendingen voor de wereldranglijst uit §2 en geven het anonieme speler-ID uit waaronder die staan. Er komt geen inlog, naam of e-mailadres aan te pas.</li>
+<li><strong>Firebase App Check</strong> (Android en iOS): controleert of verzoeken aan de ranglijst van een echte Culpa-app komen, zodat niemand van buiten de app scores kan vervalsen. Op Android gebruikt dit Google Play Integrity. Op iOS gebruikt het Apple App Attest, of Apple DeviceCheck op toestellen zonder App Attest.</li>
+<li><strong>Google Play Billing</strong> (alleen Android): verwerkt je in-app-aankopen. Culpa ziet nooit je betaalgegevens. Google Play handelt de betaling rechtstreeks af.</li>
+<li><strong>Apple App Store</strong> (alleen iOS): verwerkt je in-app-aankopen. Culpa ziet nooit je betaalgegevens. Apple handelt de betaling rechtstreeks af.</li>
+<li><strong>Meta Platforms (Facebook, Instagram) App Events</strong> (<strong>alleen Android</strong>; de iOS-app stuurt niets naar Meta): laat ons zien welke Meta-advertenties spelers naar Culpa brengen. Alleen als de app advertenties mag opvragen, en in de EER, het VK en Zwitserland alleen als je Meta in het toestemmingsscherm hebt toegestaan, ontvangt Meta: dat de app is geïnstalleerd en geopend, de eerste keer dat je een zaak oplost (het zaaknummer), en een aankoop (product, prijs, valuta en het bestelnummer van de winkel), samen met de advertentie-ID van je toestel en een anoniem app-ID dat de software van Meta op je toestel aanmaakt. Er gaat geen naam, e-mailadres, telefoonnummer of locatie mee. Meta en de ontwikkelaar zijn gezamenlijk verwerkingsverantwoordelijk voor het verzamelen en doorsturen van deze gegevens. Daarna verwerkt Meta ze als zelfstandig verantwoordelijke onder zijn eigen beleid, waaronder het leveren en verbeteren van zijn advertenties. We zetten Meta's optie Limited Data Use aan, die Meta toepast in de Amerikaanse staten waar dat vereist is. <a href="https://www.facebook.com/privacy/policy/">Privacybeleid van Meta</a></li>
 </ul>
-<p>Niet in deze versie: Culpa bevat geen Google Play Games Services. Als die ooit wordt toegevoegd, worden deze paragraaf en het Play-formulier voor gegevensbeveiliging bijgewerkt voordat die build uitgaat.</p>
-<p>We verkopen je gegevens niet. Gegevens worden alleen met deze partijen gedeeld om de app te laten werken, advertenties te tonen, betalingen te verwerken en advertentieprestaties te meten.</p>
-<h2>4. Rechtsgrond voor verwerking</h2>
+<p>Culpa gebruikt geen Google Play Games Services en geen Apple Game Center. Als dat ooit verandert, worden deze verklaring, het Play-formulier voor gegevensbeveiliging en de privacygegevens in de App Store bijgewerkt voordat die versie uitkomt.</p>
+<p>We verkopen je gegevens niet. Gegevens worden alleen met deze partijen gedeeld om de app te laten werken, advertenties te tonen, betalingen te verwerken en advertentieresultaten te meten.</p>
+
+<h2>4. Grondslag voor de verwerking</h2>
 <ul>
-<li><strong>In de Europese Economische Ruimte, het Verenigd Koninkrijk en andere regio's met vergelijkbare toestemmingsvereisten</strong>: gepersonaliseerde advertenties en gerelateerde analytics-/attributieverwerking vinden alleen plaats nadat je toestemming geeft via het toestemmingsscherm van het <strong>Google User Messaging Platform (UMP)</strong> in de app, getoond bij eerste gebruik. Als je weigert of slechts gedeeltelijk toestemming geeft, toont Culpa niet-gepersonaliseerde advertenties en beperkt de gegevensverzameling dienovereenkomstig, volgens de keuzes die UMP aan de app teruggeeft. Dat geldt ook voor Meta: de app stuurt niets naar Meta tenzij je Meta in dat scherm toestaat.</li>
-<li><strong>Buiten de EER/VK, waar de lokale wet dat toestaat</strong>: we baseren ons op <strong>gerechtvaardigd belang</strong> om apparaat-identificatoren en interactiegegevens te verwerken voor analytics, fraudepreventie en advertenties, afgewogen tegen je rechten. Waar de lokale wet toestemming vereist (bijvoorbeeld onder vergelijkbare kaders elders), vragen we die via dezelfde, regionaal aangepaste UMP-flow.</li>
-<li><strong>Aankoopgegevens</strong> worden verwerkt omdat dit noodzakelijk is om onze overeenkomst met jou uit te voeren (het leveren van wat je kocht) en om aan wettelijke boekhoud- en belastingverplichtingen te voldoen.</li>
+<li><strong>In de Europese Economische Ruimte, het Verenigd Koninkrijk, Zwitserland en andere regio's met vergelijkbare toestemmingsregels</strong>: gepersonaliseerde advertenties en de bijbehorende analyse en attributie gebeuren pas nadat je toestemming geeft in het toestemmingsscherm in de app (Google User Messaging Platform), dat je ziet als je voor het eerst speelt. Weiger je, of geef je maar deels toestemming, dan toont Culpa niet-gepersonaliseerde advertenties en beperkt de app de gegevensverzameling volgens de keuzes die dat scherm aan de app doorgeeft. Dat geldt ook voor Meta op Android: de app stuurt niets naar Meta tenzij je Meta in dat scherm toestaat.</li>
+<li><strong>Buiten die regio's, waar de lokale wet dat toestaat</strong>: we baseren ons op <strong>gerechtvaardigd belang</strong> om apparaat-ID's en gebruiksgegevens te verwerken voor analyse, fraudepreventie en advertenties, afgewogen tegen je rechten. Waar de lokale wet toestemming eist, vragen we die via hetzelfde scherm, aangepast aan je regio.</li>
+<li><strong>Toestemming voor volgen op iOS</strong>: op iOS vraagt Apple ook of Culpa je mag volgen in apps en op websites van andere bedrijven (App Tracking Transparency). Culpa stelt die vraag na het toestemmingsscherm, waar dat scherm geldt. Kies je "Vraag app om niet te volgen", dan krijg je advertenties zonder advertentie-ID. Het spel werkt in beide gevallen hetzelfde.</li>
+<li><strong>Aankoopgegevens</strong> verwerken we omdat dat nodig is om te leveren wat je kocht en om aan belasting- en boekhoudplichten te voldoen.</li>
+<li><strong>Ranglijstgegevens</strong> verwerken we omdat dat nodig is om de wereldranglijst te laten werken waaraan je meedoet.</li>
 </ul>
-<h2>5. Bewaartermijnen</h2>
+
+<h2>5. Hoe lang we gegevens bewaren</h2>
 <ul>
-<li><strong>Analytics- en crashgegevens</strong>: bewaard door Google Firebase tot maximaal 14 maanden (standaardinstelling Firebase Analytics), tenzij je eerder om verwijdering vraagt.</li>
-<li><strong>Aankoopgegevens</strong>: bewaard zolang nodig is om je aankoop te honoreren en voor de wettelijk verplichte boekhoudperiode, doorgaans tot 7 jaar.</li>
-<li><strong>Lokale app-gegevens</strong> (voortgang, instellingen, gecachete pakketten): blijven op je apparaat tot je de app verwijdert of de gegevens ervan wist.</li>
-<li><strong>Ranglijstgegevens van de dagelijkse en wekelijkse zaak</strong> (oplostijd, aantal hints, land, rang en level, anoniem speler-ID, en geen naam tenzij je daarvoor kiest): bewaard voor een beperkte periode zodat de ranglijst kan functioneren, daarna geaggregeerd of verwijderd. Meldingen via de meldknop blijven bewaard tot ze beoordeeld zijn.</li>
+<li><strong>Analysegegevens</strong>: bewaard door Google Analytics, hoogstens 14 maanden.</li>
+<li><strong>Crashgegevens</strong>: Crashlytics bewaart crashrapporten 90 dagen.</li>
+<li><strong>Aankoopgegevens</strong>: zo lang als nodig is om je aankoop te leveren en voor de wettelijke boekhoudtermijn, meestal tot 7 jaar. Google Play en Apple bewaren daarnaast hun eigen gegevens over je aankopen, onder hun eigen beleid.</li>
+<li><strong>Gegevens op je toestel</strong> (voortgang, instellingen, gedownloade pakketten): blijven op je toestel tot je de app verwijdert of de gegevens ervan wist.</li>
+<li><strong>Inzendingen op de ranglijst</strong> (oplostijd, aantal hints, land, rang en level, anoniem speler-ID, en op Android alleen een naam als je die zelf typte): bewaard tot je ze in de app verwijdert (§9), en hoogstens 12 maanden na je laatste activiteit op de ranglijst.</li>
+<li><strong>Anoniem speler-ID</strong>: bewaard tot je het in de app verwijdert (§9). Daarna haalt Google het binnen 180 dagen uit zijn systemen.</li>
+<li><strong>Meldingen</strong> via de meldknop: bewaard tot ze beoordeeld zijn, daarna verwijderd.</li>
 </ul>
+
 <h2>6. Kinderen</h2>
-<p>Culpa heeft een <strong>PEGI 7</strong>-classificatie en is <strong>niet gericht op kinderen jonger dan 13 jaar</strong> (of de equivalente minimumleeftijd in jouw land). We verzamelen niet bewust persoonsgegevens van kinderen. Omdat de app bedoeld is voor gebruikers van 13 jaar en ouder, markeren we toestemmingsverzoeken niet als afkomstig van een gebruiker onder de toestemmingsleeftijd (<code>tagForUnderAgeOfConsent</code> staat op false), zodat iedereen dezelfde toestemmingsvraag krijgt en iedereen zijn keuze via Instellingen opnieuw kan openen. Als je vermoedt dat een kind ons persoonsgegevens heeft verstrekt, neem dan contact op via <strong>info@michelzondag.com</strong> en we verwijderen deze.</p>
+<p>Culpa is bedoeld voor spelers van <strong>13 jaar en ouder</strong> (of de hogere minimumleeftijd in jouw land). De app is <strong>niet gericht op kinderen jonger dan 13</strong>. In de App Store heeft de app de leeftijdsclassificatie 13+. Op Google Play heeft hij een PEGI 7-classificatie; die zegt iets over de inhoud, niet over de leeftijd waarvoor de app bedoeld is. We verzamelen niet bewust persoonsgegevens van kinderen. Omdat de app bedoeld is voor spelers van 13 en ouder, markeren we toestemmingsvragen niet als afkomstig van een kind, zodat iedereen dezelfde toestemmingsvraag krijgt. Denk je dat een kind ons persoonsgegevens heeft gegeven, mail dan naar <strong>info@michelzondag.com</strong> en we verwijderen ze.</p>
+
 <h2>7. Jouw rechten</h2>
-<p>Afhankelijk van waar je woont, heb je mogelijk het recht om:</p>
+<p>Onder de Algemene Verordening Gegevensbescherming (AVG) en vergelijkbare wetten elders heb je het recht om:</p>
 <ul>
-<li>Inzage te krijgen in de gegevens die we over je hebben</li>
-<li>Onjuiste gegevens te laten corrigeren</li>
-<li>Verwijdering van je gegevens te vragen</li>
-<li>Bezwaar te maken tegen of beperking te vragen van bepaalde verwerkingen</li>
-<li>Toestemming op elk moment in te trekken (dit heeft geen invloed op verwerking die al heeft plaatsgevonden)</li>
-<li>Gegevensoverdraagbaarheid, waar van toepassing</li>
-<li>Een klacht in te dienen bij je lokale toezichthouder gegevensbescherming</li>
+<li>De gegevens in te zien die we over je hebben</li>
+<li>Onjuiste gegevens te laten verbeteren</li>
+<li>Je gegevens te laten verwijderen (je ranglijstgegevens kun je zelf in de app verwijderen, zie §9)</li>
+<li>Bezwaar te maken tegen bepaalde verwerkingen of ze te laten beperken</li>
+<li>Je toestemming op elk moment in te trekken (dat heeft geen invloed op verwerking die al heeft plaatsgevonden)</li>
+<li>Je gegevens in een overdraagbare vorm te krijgen, waar dat van toepassing is</li>
+<li>Een klacht in te dienen bij een toezichthouder. In Nederland, waar de ontwikkelaar gevestigd is, is dat de <a href="https://autoriteitpersoonsgegevens.nl/">Autoriteit Persoonsgegevens</a>. Je kunt ook naar de toezichthouder in je eigen land.</li>
 </ul>
-<p>Om een van deze rechten uit te oefenen, mail je naar <strong>info@michelzondag.com</strong> met je verzoek. Omdat Culpa geen accountsysteem heeft, vragen we mogelijk om gegevens zoals de advertentie-ID van je apparaat of een aankooptransactie-ID om relevante gegevens te vinden - we vragen nooit om je wachtwoord of betaalgegevens.</p>
-<h2>8. Toestemming intrekken voor advertenties</h2>
-<p>Je kunt je advertentietoestemming op elk moment bekijken of wijzigen in de app: <strong>Instellingen › Advertentie-instellingen</strong>, wat het UMP-toestemmingsscherm opnieuw opent. Je kunt advertentietracking ook beperken via de instellingen van je apparaat zelf (Android: <strong>Instellingen › Privacy › Advertenties</strong>, "Advertentie-ID verwijderen" of "Afmelden voor advertentiepersonalisatie"). Trek je daar je toestemming voor Meta in, dan stuurt de app daarna niets meer naar Meta.</p>
-<h2>9. Verzoeken om gegevensverwijdering</h2>
-<p>Omdat Culpa geen accountsysteem heeft, staan de meeste gegevens alleen op je apparaat en worden ze verwijderd zodra je de app verwijdert of de opslag ervan wist. Om verwijdering te vragen van gegevens die wij of onze verwerkers bewaren (bijvoorbeeld analytics- of crashgegevens gekoppeld aan je apparaat-/advertentie-identificatoren, of aankoopgegevens die we moeten afstemmen), mail je naar <strong>info@michelzondag.com</strong> met:</p>
+<p>Wil je een van deze rechten gebruiken, mail dan naar <strong>info@michelzondag.com</strong>. We antwoorden binnen een maand. Omdat Culpa geen accounts heeft, vragen we misschien om gegevens waarmee we je gegevens kunnen vinden, zoals de data waarop je speelde, je toestelmodel, de laatste vier tekens van je naam op de ranglijst of een bestelnummer van een aankoop. We vragen nooit om een wachtwoord of betaalgegevens.</p>
+
+<h2>8. Je advertentiekeuzes wijzigen</h2>
+<ul>
+<li><strong>In de app</strong>: waar het toestemmingsscherm geldt (zoals in de EER, het VK en Zwitserland), wijzig je je keuze op elk moment via <strong>Profiel › Over › Advertentie-instellingen</strong>, dat het scherm opnieuw opent. Elders staat die rij er niet, omdat er geen toestemming te wijzigen is. Trek je daar je toestemming voor Meta in (Android), dan stuurt de app daarna niets meer naar Meta.</li>
+<li><strong>Android</strong>: je kunt je advertentie-ID verwijderen of je afmelden voor gepersonaliseerde advertenties in de instellingen van je toestel, meestal via <strong>Instellingen › Privacy › Advertenties</strong> (het precieze pad verschilt per telefoon).</li>
+<li><strong>iOS</strong>: je zet volgen voor Culpa op elk moment uit via <strong>Instellingen › Privacy en beveiliging › Volgen</strong>. Je krijgt dan advertenties zonder advertentie-ID.</li>
+</ul>
+
+<h2>9. Je gegevens verwijderen</h2>
+<h3>In de app (Android en iOS)</h3>
+<p>Ga naar <strong>Profiel › Over › Ranglijstgegevens verwijderen</strong>. De app laat eerst zien wat er verwijderd wordt en vraagt je dat te bevestigen. Daarna:</p>
 <ol>
-<li>De bij benadering datum/data waarop je de app gebruikte</li>
-<li>De advertentie-ID van je apparaat, indien bekend (<strong>Instellingen › Privacy › Advertenties</strong> op Android), of een aankooptransactie-ID</li>
+<li>verwijdert de app je tijden van alle ranglijsten van de dag en de week, onder het anonieme speler-ID dat deze installatie gebruikt,</li>
+<li>verwijdert de app je anonieme speler-ID. Staat Google dat op dat moment niet toe, dan gebruikt de app het ID op dit toestel niet meer en zegt de app dat. Aan het ID hangen dan geen ranglijstgegevens meer,</li>
+<li>wist de app je detectivenaam en scores die nog op verzending wachten van je toestel.</li>
 </ol>
-<p>We bevestigen verwijdering binnen 30 dagen, behalve waar we wettelijk verplicht zijn aankoop-/boekhoudgegevens langer te bewaren.</p>
+<p>Als het klaar is, zie je een bevestiging. Is de ranglijst niet bereikbaar, dan wordt er niets verwijderd en vraagt de app je het later opnieuw te proberen. Je spelvoortgang, aankopen en instellingen blijven staan: die hebben je toestel nooit verlaten. Speel je daarna weer een zaak van de dag of van de week, dan krijg je een nieuw anoniem ID. Meldingen die je zelf met de meldknop deed, blijven bewaard tot ze beoordeeld zijn.</p>
+<p>Zie je deze optie nog niet in jouw versie van de app, werk de app dan bij of mail ons.</p>
+<h3>Andere gegevens</h3>
+<p>Gegevens op je toestel verdwijnen als je de app verwijdert of de opslag ervan wist. Wil je dat we andere gegevens verwijderen, zoals analyse- of crashgegevens, aankoopgegevens, of inzendingen op de ranglijst die de app niet kon vinden (bijvoorbeeld van een eerdere installatie), mail dan naar <strong>info@michelzondag.com</strong> met:</p>
+<ol>
+<li>de data waarop je de app ongeveer gebruikte en je toestelmodel, en</li>
+<li>als je die hebt: de laatste vier tekens van je naam op de ranglijst, je Android-advertentie-ID, of een bestelnummer (het bestelnummer van Google Play, of het order-ID in je aankoopgeschiedenis bij Apple).</li>
+</ol>
+<p>We bevestigen de verwijdering binnen een maand, behalve waar de wet ons verplicht aankoop- of boekhoudgegevens langer te bewaren.</p>
+
 <h2>10. Beveiliging</h2>
-<p>Gegevens die worden verzonden naar onze verwerkers (Firebase, AdMob, Google Play Billing, Meta) zijn versleuteld met industriestandaard TLS. We slaan zelf geen betaalkaartgegevens op; Google Play Billing handelt dat rechtstreeks af.</p>
-<h2>11. Internationale gegevensoverdrachten</h2>
-<p>Onze verwerkers, Google en Meta, kunnen gegevens verwerken en opslaan buiten je land, inclusief in de Verenigde Staten, onder het EU-VS-kader voor gegevensbescherming, hun standaardcontractbepalingen of gelijkwaardige waarborgen. Zie de privacyverklaring van elke partij, gelinkt in §3, voor details.</p>
+<p>Gegevens die naar de diensten uit §3 gaan, zijn onderweg versleuteld met gangbare TLS-versleuteling. App Check helpt nep-verzoeken van de ranglijst weg te houden. We bewaren zelf geen betaalgegevens: Google Play (Android) en Apple (iOS) handelen de betaling rechtstreeks af.</p>
+
+<h2>11. Gegevens buiten de EU</h2>
+<p>Google, Apple en, op Android, Meta kunnen gegevens buiten je land verwerken en opslaan, ook in de Verenigde Staten, onder het EU-VS-kader voor gegevensbescherming, standaardcontractbepalingen of gelijkwaardige waarborgen. Zie het privacybeleid van elke partij voor details.</p>
+
 <h2>12. Wijzigingen in deze verklaring</h2>
-<p>We kunnen deze verklaring bijwerken naarmate de app verandert of wettelijke vereisten evolueren. De datum "Laatst bijgewerkt" bovenaan geeft de meest recente wijziging weer. Belangrijke wijzigingen worden waar vereist ook doorgevoerd in de UMP-toestemmingsflow in de app.</p>
+<p>We kunnen deze verklaring bijwerken als de app of de wet verandert. De datum "Laatst bijgewerkt" bovenaan laat de nieuwste versie zien. Waar dat nodig is, tonen we belangrijke wijzigingen ook in het toestemmingsscherm in de app.</p>
+
 <h2>13. Contact</h2>
-<p><strong>Ontwikkelaar:</strong> Michel Zondag
-<strong>E-mail:</strong> info@michelzondag.com
-<strong>App:</strong> Culpa (pakketnaam <code>com.michelzondag.culpa</code>)</p>
+<p><strong>Ontwikkelaar:</strong> Michel Zondag, handelend als Culpa<br>
+<strong>E-mail:</strong> info@michelzondag.com<br>
+<strong>App:</strong> Culpa (Android-pakketnaam <code>com.michelzondag.culpa</code>, en Culpa in de App Store)</p>
 <hr />
-<p><em>Deze verklaring is ook beschikbaar in het Engels: <code>privacy-policy.md</code>.</em></p></main><footer>&copy; 2026 Michel Zondag &middot; <a href="index.html">culpa</a></footer></body></html>
+<p><em>Deze verklaring is ook beschikbaar in het <a href="privacy.html">Engels</a>.</em></p></main><footer>&copy; 2026 Michel Zondag &middot; <a href="index.html">culpa</a></footer></body></html>
